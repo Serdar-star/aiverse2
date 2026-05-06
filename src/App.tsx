@@ -178,6 +178,8 @@ export default function App() {
     if (!user) {
       handleLogin(email);
     }
+    // Refresh page to kill existing ad scripts
+    window.location.reload();
   };
 
   // Increment completed conversion limit counter
